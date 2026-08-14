@@ -1,0 +1,337 @@
+{
+  "env": {
+    "CLAUDE_CODE_DISABLE_TERMINAL_TITLE": "1",
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "includeGitInstructions": false,
+  "permissions": {
+    "allow": [
+      "Bash([:*)",
+      "Bash(awk:*)",
+      "Bash(basename:*)",
+      "Bash(brew:*)",
+      "Bash(cat:*)",
+      "Bash(cd:*)",
+      "Bash(chmod:*)",
+      "Bash(clear)",
+      "Bash(cp:*)",
+      "Bash(curl:*)",
+      "Bash(date:*)",
+      "Bash(diff:*)",
+      "Bash(dirname:*)",
+      "Bash(docker:*)",
+      "Bash(echo:*)",
+      "Bash(env)",
+      "Bash(export:*)",
+      "Bash(file:*)",
+      "Bash(find:*)",
+      "Bash(for:*)",
+      "Bash(gh:*)",
+      "Bash(git:*)",
+      "Bash(grep:*)",
+      "Bash(head:*)",
+      "Bash(history:*)",
+      "Bash(hostname)",
+      "Bash(if:*)",
+      "Bash(jq:*)",
+      "Bash(less:*)",
+      "Bash(ln:*)",
+      "Bash(ls:*)",
+      "Bash(man:*)",
+      "Bash(mkdir -p:*)",
+      "Bash(mkdir:*)",
+      "Bash(more:*)",
+      "Bash(mv:*)",
+      "Bash(node:*)",
+      "Bash(npm:*)",
+      "Bash(npx:*)",
+      "Bash(open:*)",
+      "Bash(pbcopy:*)",
+      "Bash(pbpaste:*)",
+      "Bash(pip:*)",
+      "Bash(pnpm:*)",
+      "Bash(printenv:*)",
+      "Bash(printf:*)",
+      "Bash(ps:*)",
+      "Bash(pwd)",
+      "Bash(python3:*)",
+      "Bash(python:*)",
+      "Bash(realpath:*)",
+      "Bash(rg:*)",
+      "Bash(rm -rf .claude/teams/*)",
+      "Bash(rm -rf .claude/teams/**)",
+      "Bash(rm -rf .claude/tmp/*)",
+      "Bash(rm -rf .claude/tmp/**)",
+      "Bash(rm -rf ~/.claude/tasks/*)",
+      "Bash(rm -rf ~/.claude/tasks/**)",
+      "Bash(rm -rf ~/.claude/teams/*)",
+      "Bash(rm -rf ~/.claude/teams/**)",
+      "Bash(rm -rf ~/.claude/tmp/*)",
+      "Bash(rm -rf ~/.claude/tmp/**)",
+      "Bash(rm:*)",
+      "Bash(sed:*)",
+      "Bash(sort:*)",
+      "Bash(ssh-keygen:*)",
+      "Bash(ssh:*)",
+      "Bash(stat:*)",
+      "Bash(tail:*)",
+      "Bash(tar:*)",
+      "Bash(test:*)",
+      "Bash(touch:*)",
+      "Bash(tree:*)",
+      "Bash(type:*)",
+      "Bash(uname:*)",
+      "Bash(uniq:*)",
+      "Bash(unzip:*)",
+      "Bash(wc:*)",
+      "Bash(which:*)",
+      "Bash(while:*)",
+      "Bash(whoami)",
+      "Bash(yarn:*)",
+      "Bash(zip:*)",
+      "Edit(.claude/decisions/**)",
+      "Edit(.claude/state/**)",
+      "Edit(.claude/teams/**)",
+      "Edit(.claude/tmp/**)",
+      "Edit(/**)",
+      "Edit(~/.claude/teams/**)",
+      "Read(~/**)",
+      "Read(~/.ssh/*.pub)",
+      "WebFetch",
+      "WebSearch",
+      "Write(.claude/decisions/**)",
+      "Write(.claude/state/**)",
+      "Write(.claude/teams/**)",
+      "Write(.claude/tmp/**)",
+      "Write(/**)",
+      "Write(~/.claude/teams/**)"
+    ],
+    "deny": [
+      "Bash(rm -rf /)",
+      "Bash(rm -rf ~)",
+      "Bash(rm -rf ~/*)",
+      "Bash(sudo rm:*)",
+      "Bash(rm -rf .git)",
+      "Bash(bash -c:*)",
+      "Bash(sh -c:*)",
+      "Bash(bash -i:*)",
+      "Bash(sh -i:*)",
+      "Bash(source:*)",
+      "Bash(.:*)",
+      "Read(.env)",
+      "Read(.env.*)",
+      "Read(**/.env)",
+      "Read(**/.env.*)",
+      "Write(**/.env)",
+      "Write(**/.env.*)",
+      "Edit(**/.env)",
+      "Edit(**/.env.*)",
+      "Write(**/.npmrc)",
+      "Edit(**/.npmrc)",
+      "Write(**/.yarnrc)",
+      "Edit(**/.yarnrc)",
+      "Write(**/.yarnrc.yml)",
+      "Edit(**/.yarnrc.yml)",
+      "Write(**/bunfig.toml)",
+      "Edit(**/bunfig.toml)",
+      "Write(**/.bazelrc)",
+      "Edit(**/.bazelrc)",
+      "Write(**/.pre-commit-config.yaml)",
+      "Edit(**/.pre-commit-config.yaml)",
+      "Write(**/.devcontainer/**)",
+      "Edit(**/.devcontainer/**)",
+      "Write(**/.mcp.json)",
+      "Edit(**/.mcp.json)",
+      "Write(~/.claude.json)",
+      "Edit(~/.claude.json)",
+      "Read(~/.ssh/id_*)",
+      "Read(~/.ssh/*_rsa)",
+      "Read(~/.ssh/*_ed25519)",
+      "Read(~/.aws/*)",
+      "Read(~/.npmrc)",
+      "Read(**/.npmrc)",
+      "Read(~/.pypirc)",
+      "Read(**/pip.conf)",
+      "Read(~/.netrc)",
+      "Read(~/.pgpass)",
+      "Read(~/.my.cnf)",
+      "Read(~/.docker/config.json)",
+      "Read(~/.gnupg/**)",
+      "Write(~/.gnupg/**)",
+      "Edit(~/.gnupg/**)",
+      "Read(~/.kube/**)",
+      "Write(~/.kube/**)",
+      "Edit(~/.kube/**)",
+      "Read(~/.cargo/credentials*)",
+      "Read(~/.zsh_history)",
+      "Read(~/.bash_history)",
+      "Read(~/.lesshst)",
+      "Write(~/.zshrc)",
+      "Write(~/.bashrc)",
+      "Write(~/.bash_profile)",
+      "Write(~/.zprofile)",
+      "Write(~/.ssh/**)",
+      "Write(~/Library/LaunchAgents/**)",
+      "Edit(~/.zshrc)",
+      "Edit(~/.bashrc)",
+      "Edit(~/.bash_profile)",
+      "Edit(~/.zprofile)",
+      "Edit(~/.ssh/**)",
+      "Edit(~/Library/LaunchAgents/**)"
+    ],
+    "defaultMode": "acceptEdits"
+  },
+  "hooks": {
+    "Notification": [
+      {
+        "matcher": "permission_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Ping.aiff & osascript -e 'display notification \"Un agent attend ton autorisation\" with title \"Claude Code\"'"
+          }
+        ]
+      },
+      {
+        "matcher": "idle_prompt",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "afplay /System/Library/Sounds/Tink.aiff & osascript -e 'display notification \"Claude attend ton input\" with title \"Claude Code\"'"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/auto-format.sh"
+          }
+        ]
+      }
+    ],
+    "SessionStart": [
+      {
+        "matcher": "compact",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/post-compact-snapshot.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "startup",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/session-resume-journal.sh"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/graphify-suggest.sh"
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/pre-compact-snapshot.sh"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/block-sensitive-files.sh"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/block-pollution-files.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/detect-project-context.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "SendMessage",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/send-message-guard.sh"
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/block-network-shell-pipes.sh"
+          }
+        ]
+      }
+    ],
+    "UserPromptExpansion": [
+      {
+        "matcher": "team",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/detect-project-context.sh"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/quality-gate.sh",
+            "asyncRewake": true,
+            "rewakeMessage": "Quality gate issue:"
+          },
+          {
+            "type": "command",
+            "command": "~/.claude/hooks/token-tracker.sh",
+            "async": true
+          }
+        ]
+      }
+    ]
+  },
+  "statusLine": {
+    "type": "command",
+    "command": "~/.claude/statusline.sh",
+    "padding": 1
+  },
+  "enabledPlugins": {
+    "pyright-lsp@claude-plugins-official": true,
+    "swift-lsp@claude-plugins-official": true,
+    "typescript-lsp@claude-plugins-official": true,
+    "frontend-design@claude-plugins-official": true
+  },
+  "effortLevel": "xhigh",
+  "autoUpdatesChannel": "latest",
+  "tui": "fullscreen",
+  "autoDreamEnabled": true,
+  "skipDangerousModePermissionPrompt": true
+}

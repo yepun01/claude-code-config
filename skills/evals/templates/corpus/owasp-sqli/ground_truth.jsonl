@@ -1,0 +1,1 @@
+{"defect_id":"owasp-sqli-1","file":"code/BenchmarkTest00008.java","line_start":32,"line_end":32,"type":"sql-injection","severity":"critical","fix_hint":"build the CallableStatement with bound parameters or validate against a whitelist; never concatenate the request header value into the SQL string"}

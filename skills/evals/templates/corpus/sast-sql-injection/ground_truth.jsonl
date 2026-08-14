@@ -1,0 +1,2 @@
+{"defect_id":"sast-sql-1","file":"code/lookup.py","line_start":7,"line_end":7,"type":"sql-injection","severity":"critical","fix_hint":"use parameterized query: cur.execute('... WHERE email = ?', (email,))"}
+{"defect_id":"sast-sql-2","file":"code/lookup.py","line_start":19,"line_end":19,"type":"sql-injection","severity":"critical","fix_hint":"parameterize role and limit; do not f-string SQL"}

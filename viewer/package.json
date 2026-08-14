@@ -1,0 +1,25 @@
+{
+  "name": "viewer",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --port 7878",
+    "server": "bun run server/server.ts",
+    "server:typecheck": "tsc --noEmit -p server/tsconfig.json"
+  },
+  "dependencies": {
+    "@preact/signals": "^1.3.0",
+    "dexie": "^4.0.10",
+    "preact": "^10.24.3",
+    "preact-iso": "^2.9.1"
+  },
+  "devDependencies": {
+    "@preact/preset-vite": "^2.9.1",
+    "bun-types": "^1.3.13",
+    "typescript": "^5.6.3",
+    "vite": "^5.4.10"
+  }
+}

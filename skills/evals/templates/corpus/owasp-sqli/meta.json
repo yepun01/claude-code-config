@@ -1,0 +1,1 @@
+{"source":"owasp-bench-v1.2","source_ref":"https://github.com/OWASP-Benchmark/BenchmarkJava/blob/1.2beta/src/main/java/org/owasp/benchmark/testcode/BenchmarkTest00008.java","language":"java","cwe":"CWE-89","owasp_overlap":"sqli"}

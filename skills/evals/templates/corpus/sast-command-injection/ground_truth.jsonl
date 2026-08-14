@@ -1,0 +1,2 @@
+{"defect_id":"sast-cmdi-1","file":"code/cmd_runner.py","line_start":8,"line_end":8,"type":"command-injection","severity":"critical","fix_hint":"pass argv list with shell=False: subprocess.run(['convert', path, '-resize', '256x', out], check=True)"}
+{"defect_id":"sast-cmdi-2","file":"code/cmd_runner.py","line_start":14,"line_end":14,"type":"command-injection","severity":"critical","fix_hint":"replace os.system with subprocess.run(['tar', '-czf', 'logs.tar.gz', dirname], check=True); never interpolate user input into a shell string"}

@@ -1,0 +1,1 @@
+{"source":"llm-blind","source_ref":"claude -p --agent code-reviewer-control --max-budget-usd 1.00 (anti-leakage prompt template, ADR auto-corpus-13)","language":"typescript","cwe":"CWE-79","owasp_overlap":"xss"}

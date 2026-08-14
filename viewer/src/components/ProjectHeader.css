@@ -1,0 +1,82 @@
+.project-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--bg);
+  border-bottom: 1px solid var(--border);
+  padding: var(--space-4) var(--space-5) 0;
+}
+
+.project-header__top {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  flex-wrap: wrap;
+}
+
+.project-header__glyph {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
+}
+
+.project-header__name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+  letter-spacing: -0.01em;
+}
+
+.project-header__chip {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px var(--space-3);
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  cursor: pointer;
+}
+
+.project-header__activity {
+  margin-left: auto;
+  color: var(--text-subtle);
+  font-size: 12px;
+}
+
+.project-header__tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-top: var(--space-4);
+}
+
+.project-header__tab {
+  position: relative;
+  padding: var(--space-2) var(--space-3);
+  font-size: 13px;
+  color: var(--text-muted);
+  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
+  transition: color var(--motion-fast);
+}
+
+.project-header__tab:hover {
+  color: var(--text);
+}
+
+.project-header__tab--active {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.project-header__tab--active::after {
+  content: "";
+  position: absolute;
+  left: var(--space-3);
+  right: var(--space-3);
+  bottom: -1px;
+  height: 2px;
+  background: var(--accent);
+  border-radius: 2px;
+}

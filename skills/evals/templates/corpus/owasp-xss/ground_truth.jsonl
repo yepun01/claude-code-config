@@ -1,0 +1,1 @@
+{"defect_id":"owasp-xss-1","file":"code/BenchmarkTest00013.java","line_start":32,"line_end":32,"type":"xss-reflected","severity":"high","fix_hint":"do not pass the unfiltered Referer header as the format string to PrintWriter.format; HTML-encode the value (OWASP Java Encoder) before writing it to the response, and use a static format template"}

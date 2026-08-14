@@ -1,0 +1,1 @@
+{"defect_id":"owasp-cmdi-1","file":"code/BenchmarkTest00006.java","line_start":37,"line_end":37,"type":"command-injection","severity":"critical","fix_hint":"do not concatenate the request header into a sh -c argument; pass the value as a separate argv element to a non-shell command, or validate against a strict allow-list before use"}

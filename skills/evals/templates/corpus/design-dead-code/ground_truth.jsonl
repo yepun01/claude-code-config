@@ -1,0 +1,3 @@
+{"defect_id":"design-1","file":"code/cart.ts","line_start":12,"line_end":12,"type":"stale-todo","severity":"low","fix_hint":"resolve or delete the 2-year-old TODO"}
+{"defect_id":"design-2","file":"code/cart.ts","line_start":17,"line_end":18,"type":"unreachable-code","severity":"medium","fix_hint":"delete dead code after the return statement"}
+{"defect_id":"design-3","file":"code/cart.ts","line_start":22,"line_end":24,"type":"dead-export","severity":"medium","fix_hint":"remove applyTax — never imported"}

@@ -1,0 +1,1 @@
+{"defect_id":"real-diff-d43e921-1","file":"code/measure_panes.sh","line_start":9,"line_end":9,"type":"incorrect-shell-pipeline","severity":"high","fix_hint":"sum panes across ALL claude-swarm sockets (loop over each match), not just the first one returned by head -1; orphan sockets from crashed sessions cause undercount and saturate the live socket"}

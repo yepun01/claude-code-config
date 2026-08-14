@@ -1,0 +1,62 @@
+# Pre-registered hypotheses
+
+## Status
+Draft (created by /evals init)
+
+After first eval run: Locked at git commit <sha>; any further amendment requires
+a superseding ADR per ADR 0003 §D-4 anti-amendment rule.
+
+## Pre-registration commitment
+
+Per ADR 0003 §D-4 this file is committed to git BEFORE the first run.
+`git log --diff-filter=A evals/HYPOTHESES.md` produces a timestamp predating
+any `evals/runs/*` artifact. Immutable git history is the audit anchor.
+
+If a CC fails its pre-registered threshold, a follow-up ADR
+`ADR-NNNN-supersede-cc-X.md` is committed within 30 days; the corresponding
+markers + sections are removed from agents in the same commit window.
+
+## Methodological questions to resolve
+
+These 6 questions (per ADR 0003 §"Open methodological questions") MUST be
+answered before any A/B pilot runs.
+
+**How to answer**: replace the placeholder text on the `RESOLVED:` line with
+your answer. The pre-flight gate considers a question resolved as soon as the
+`RESOLVED:` line carries non-placeholder text (the leading `[ ]`/`[X]` marker
+and the surrounding `[ ] OPEN` line are decorative — feel free to flip them or
+leave them, the gate looks at the text after the colon).
+
+Q2 and Q5 are the OUTPUT of the pre-pilot itself — they may stay unanswered
+during `/evals run --pre-pilot`. The other four MUST be RESOLVED first.
+
+### Q1 — CC-5 control specification
+[ ] OPEN
+[ ] RESOLVED: <answer or ADR ref>
+
+### Q2 — N calibration via pre-pilot
+[ ] OPEN — answered after `/evals report --pre-pilot` runs
+[ ] RESOLVED: sigma-ratio observed = X; N escalation = Y
+
+### Q3 — Refutable-by grid pre-calibration
+[ ] OPEN
+[ ] RESOLVED: ...
+
+### Q4 — Adversarial corpus stratification
+[ ] OPEN
+[ ] RESOLVED: ...
+
+### Q5 — Test-retest baseline (this pre-pilot)
+[ ] OPEN — answered after `/evals report --pre-pilot` runs
+[ ] RESOLVED: sigma on finding_count = X; pre-pilot ratio = Y
+
+### Q6 — Inter-rater kappa at solo scale
+[ ] OPEN
+[ ] RESOLVED: ...
+
+## CC-5 hypotheses
+[Filled when Q1-Q6 are RESOLVED. Fields: H statement, effect-size threshold, N, suppression rule, stop criteria.]
+
+## CC-4 hypotheses (deferred — fill after CC-5 verdict)
+
+## CC-2 hypotheses (deferred — fill after CC-4 verdict)

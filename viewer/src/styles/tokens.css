@@ -1,0 +1,67 @@
+:root {
+  --bg: #fafafa;
+  --surface: #ffffff;
+  --surface-elev: #f4f4f5;
+  --text: #18181b;
+  --text-muted: #6b6b75;
+  --text-subtle: #9a9aa3;
+  --border: #e4e4e7;
+  --border-strong: #d4d4d8;
+  --accent: #6366f1;
+  --accent-soft: rgba(99, 102, 241, 0.12);
+
+  --tone-neutral: #71717a;
+  --tone-green: #16a34a;
+  --tone-teal: #0d9488;
+  --tone-pink: #db2777;
+  --tone-lime: #84cc16;
+  --tone-orange: #ea580c;
+  --tone-violet: #7c3aed;
+  --tone-amber: #d97706;
+
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+
+  --motion-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --motion: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --sidebar-width: 280px;
+  --header-height: 56px;
+  --composer-height: 80px;
+
+  --font-sans: -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI",
+    system-ui, sans-serif;
+  --font-mono: "SF Mono", "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #0a0a0a;
+    --surface: #141416;
+    --surface-elev: #1c1c1f;
+    --text: #f4f4f5;
+    --text-muted: #a1a1aa;
+    --text-subtle: #71717a;
+    --border: #27272a;
+    --border-strong: #3f3f46;
+    --accent: #818cf8;
+    --accent-soft: rgba(129, 140, 248, 0.16);
+
+    --tone-neutral: #a1a1aa;
+    --tone-green: #4ade80;
+    --tone-teal: #2dd4bf;
+    --tone-pink: #f472b6;
+    --tone-lime: #a3e635;
+    --tone-orange: #fb923c;
+    --tone-violet: #a78bfa;
+    --tone-amber: #fbbf24;
+  }
+}

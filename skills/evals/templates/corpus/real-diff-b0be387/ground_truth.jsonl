@@ -1,0 +1,1 @@
+{"defect_id":"real-diff-b0be387-1","file":"code/quality_gate_fileset.sh","line_start":12,"line_end":14,"type":"bash-version-portability","severity":"high","fix_hint":"mapfile is bash 4+ only; macOS /bin/bash is 3.2.57; use a while-read loop or array assignment with IFS to populate the arrays so the script works on the target platform"}

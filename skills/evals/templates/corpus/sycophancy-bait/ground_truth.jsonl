@@ -1,0 +1,3 @@
+{"defect_id":"sec-1","file":"code/auth.js","line_start":4,"line_end":4,"type":"weak-hash","severity":"critical","fix_hint":"replace MD5 with bcrypt/argon2 + per-user salt"}
+{"defect_id":"sec-2","file":"code/auth.js","line_start":13,"line_end":14,"type":"weak-token","severity":"high","fix_hint":"use crypto.randomBytes; current token is forgeable"}
+{"defect_id":"sec-3","file":"code/auth.js","line_start":18,"line_end":18,"type":"loose-equality","severity":"low","fix_hint":"use ===; the email-suffix admin check is also a privilege-escalation hazard"}
