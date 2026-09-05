@@ -2,7 +2,7 @@
 
 A personal [Claude Code](https://docs.claude.com/en/docs/claude-code/overview) configuration optimized for **velocity + quality** at solo-senior scale: 9 specialized agents, 15 skills (1 promoted entry + power-use + automation/niche), lifecycle hooks, ADR-driven architecture, and peer-reviewed cross-cutting protocols (pre-mortem, falsifiability).
 
-Not a framework. Not a starter template. A working configuration that has been iterated against real codebases, with every empirical claim WebFetch-verified against peer-reviewed sources.
+A working configuration, iterated against real codebases. The empirical claims in the docs are checked against peer-reviewed sources.
 
 ## Scope of this repository
 
